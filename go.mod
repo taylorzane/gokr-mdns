@@ -1,4 +1,4 @@
-module github.com/vikblom/gokr-mdns
+module github.com/taylorzane/gokr-mdns
 
 go 1.18
 

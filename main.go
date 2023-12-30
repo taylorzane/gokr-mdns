@@ -42,7 +42,8 @@ func main() {
 	flag.StringVar(&Host, "host", "gokrazy", "mDNS host")
 	flag.StringVar(&Domain, "domain", "local", "mDNS domain")
 	flag.StringVar(&IfacesStr, "ifaces", "eth0,wlan0", "broadcast interfaces (comma-separated)")
-
+	flag.Parse()
+	
 	Ifaces = strings.Split(IfacesStr, ",")
 
 	// Wait until network interfaces have a chance to work.
